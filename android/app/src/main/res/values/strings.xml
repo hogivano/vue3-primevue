@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">harapan-jaya</string>
+    <string name="title_activity_main">harapan-jaya</string>
+    <string name="package_name">id.co.hjex.app</string>
+    <string name="custom_url_scheme">id.co.hjex.app</string>
+</resources>
