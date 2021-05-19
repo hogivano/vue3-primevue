@@ -1,7 +1,6 @@
 <template>
 <div class="home">
   <img alt="Vue logo" src="@/assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   <Card class="mx-10">
     <template #title>
       Advanced Card
@@ -22,17 +21,11 @@
 import {
   Options,
   Vue
-} from 'vue-class-component';
-import HelloWorld from '@/views/shared-components/HelloWorld.vue';
-import Card from 'primevue/card';
+} from 'vue-class-component'
 
 @Options({
-  components: {
-    HelloWorld,
-    Card
-  },
   mounted() {
-    this.test();
+    this.test()
   },
   methods: {
     test() {
@@ -45,8 +38,8 @@ import Card from 'primevue/card';
         y: 2,
         a: 3,
         b: 4
-      };
-      console.log(x, y, z);
+      }
+      console.log(x, y, z)
     }
   }
 })

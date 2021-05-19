@@ -1,5 +1,5 @@
 <template>
   <section>
-    Sorry, your connection is lost
+    Mohon maaf, kamu tidak memiliki akses internet
   </section>
 </template>

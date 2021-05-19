@@ -1,6 +1,6 @@
 {
-  "appId": "id.co.hjex.app",
-  "appName": "harapan-jaya",
+  "appId": "com.example",
+  "appName": "base-example",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "dist",

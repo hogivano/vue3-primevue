@@ -1,0 +1,354 @@
+@import 'variable';
+
+.layout-main {
+  background: $color-background;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.layout-wrapper {
+  min-height: 100vh;
+}
+
+.layout-topbar {
+  position: fixed;
+  height: 4.6rem;
+  padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+  z-index: 1;
+  right: 0;
+  left: 250px;
+  background: white;
+
+  .btn-event-panel {
+    background: $color-blue-grey-lighten-4 !important;
+    border: none !important;
+    padding: 0.5em;
+    border-radius: 0.75rem;
+  }
+
+  .content-header {
+    border-left: 2px solid $color-blue-grey-lighten-4;
+    border-right: 2px solid $color-blue-grey-lighten-4;
+    margin: 0 1.3rem;
+    padding: 0 1.3rem;
+  }
+
+  .icon-header svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .right-header {
+    .name-profile {
+      font-size: $subtitle1;
+      font-weight: 400;
+      color: $color-black;
+    }
+
+    .role-profile {
+      font-size: $subtitle2;
+      font-weight: 600;
+      color: $color-blue-grey-lighten-1;
+    }
+  }
+}
+
+.layout-main {
+  margin-left: $width-leftmenu;
+  padding: 5.8rem 1.1rem 1.1rem 1.1rem;
+  min-height: calc(100vh - 5.8rem - 1.1rem);
+}
+
+.left-panel {
+  width: $width-leftmenu;
+  height: 100%;
+  position: fixed;
+  background: white;
+  z-index: 2;
+  box-shadow: 2px 0px 32px rgba(0, 0, 0, 0.08);
+  overflow-y: auto;
+  transition: width .5s ease-in-out;
+
+  .logo {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid $color-blue-grey-lighten-4;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.8rem;
+
+    img {
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+  .p-panelmenu {
+    border: unset;
+  }
+
+  .p-panelmenu .p-panelmenu-panel .p-panelmenu-header a {
+    background: white !important;
+  }
+
+  .list-menu {
+    .header-menu {
+      font-size: $subtitle1;
+      font-weight: 400;
+      color: $color-blue-grey-darken-1;
+    }
+
+    .dropdown-list-menu {
+      .icon svg {
+        height: 1.3rem;
+        width: 1.3rem;
+      }
+
+      h6 {
+        font-size: $h6;
+        font-weight: 400;
+      }
+
+      .body.active {
+        background-color: $color-orange-lighten-5;
+      }
+
+      .item-menu {
+        .circle-icon {
+          color: #C4C4C4;
+          fill: #C4C4C4;
+        }
+      }
+
+      .item-menu.active {
+        h6 {
+          color: $color-orange;
+        }
+
+        .circle-icon {
+          color: $color-orange;
+          fill: $color-orange;
+        }
+      }
+
+      .item-menu:hover {
+        h6 {
+          color: $color-orange;
+        }
+
+        .circle-icon {
+          color: $color-orange;
+          fill: $color-orange;
+        }
+      }
+    }
+  }
+}
+
+.left-panel::-webkit-scrollbar {
+  width: 3px;
+}
+
+.left-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.left-panel::-webkit-scrollbar-thumb {
+  background: $color-blue-grey-lighten-3;
+  border-radius: 6px;
+  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+  width: 6px;
+}
+
+.left-panel::-webkit-scrollbar-thumb:hover {
+  background: $color-blue-grey-lighten-2;
+}
+
+.left-panel-sidebar {
+  // width: 50%;
+  height: 100%;
+  background: white;
+  z-index: 2;
+  box-shadow: 2px 0px 32px rgba(0, 0, 0, 0.08);
+  overflow-y: auto;
+  transition: width .5s ease-in-out;
+
+  .logo {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid $color-blue-grey-lighten-4;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.8rem;
+
+    img {
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+  .p-panelmenu {
+    border: unset;
+  }
+
+  .p-panelmenu .p-panelmenu-panel .p-panelmenu-header a {
+    background: white !important;
+  }
+
+  .list-menu {
+    .header-menu {
+      font-size: $subtitle1;
+      font-weight: 400;
+      color: $color-blue-grey-darken-1;
+    }
+
+    .dropdown-list-menu {
+      .icon svg {
+        height: 1.3rem;
+        width: 1.3rem;
+      }
+
+      h6 {
+        font-size: $h6;
+        font-weight: 400;
+      }
+
+      .body.active {
+        background-color: $color-orange-lighten-5;
+      }
+
+      .item-menu {
+        .circle-icon {
+          color: #C4C4C4;
+          fill: #C4C4C4;
+        }
+      }
+
+      .item-menu.active {
+        h6 {
+          color: $color-orange;
+        }
+
+        .circle-icon {
+          color: $color-orange;
+          fill: $color-orange;
+        }
+      }
+
+      .item-menu:hover {
+        h6 {
+          color: $color-orange;
+        }
+
+        .circle-icon {
+          color: $color-orange;
+          fill: $color-orange;
+        }
+      }
+    }
+  }
+}
+
+.left-panel-sidebar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.left-panel-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.left-panel-sidebar::-webkit-scrollbar-thumb {
+  background: $color-blue-grey-lighten-3;
+  border-radius: 6px;
+  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+  width: 6px;
+}
+
+.left-panel-sidebar::-webkit-scrollbar-thumb:hover {
+  background: $color-blue-grey-lighten-2;
+}
+
+
+.dropdown-custom {
+  .down-arrow {
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    -ms-transition: -ms-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+  }
+
+  .down-arrow svg {
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+}
+
+.dropdown-list-menu {
+  .arrow {
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    -ms-transition: -ms-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+  }
+
+  .rotate {
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+
+  .expandable {
+    overflow: hidden;
+    height: 0;
+    -moz-transition: height .3s;
+    -ms-transition: height .3s;
+    -o-transition: height .3s;
+    -webkit-transition: height .3s;
+    transition: height .3s;
+  }
+}
+
+.body:hover {
+  background-color: $color-orange-lighten-5;
+}
+
+.type-bus-sidebar .p-sidebar-content {
+  height: 100%;
+}
+
+@import 'table';
+
+
+//tablet
+@media screen and (max-width: 1023px) {
+  html {
+    font-size: 18px;
+  }
+  .layout-main {
+    margin-left: 0;
+  }
+
+  .left-panel {
+    // width: 0;
+    position: fixed;
+    width: 300px;
+  }
+
+  .layout-topbar {
+    left: 0;
+  }
+}
+
+//mobile
+@media screen and (max-width: 768px) {
+  .left-panel {
+    width: 100%;
+  }
+}

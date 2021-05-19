@@ -14,8 +14,9 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    "linebreak-style": "off",
     'max-len': ["error", {
-      "code": 250
+      "code": 1000
     }],
     "comma-dangle": ["error", {
       "arrays": "only-multiline",
@@ -23,7 +24,16 @@ module.exports = {
       "imports": "never",
       "exports": "never",
       "functions": "never"
-    }]
+    }],
+    // "comma-dangle": "off",
+    "semi": ["error", "never"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/prefer-default-export": "off",
+    "no-plusplus": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-param-reassign": "off",
+    "eol-last": 0,
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
   },
   overrides: [{
     files: [

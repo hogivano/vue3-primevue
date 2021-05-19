@@ -1,4 +1,11 @@
 module.exports = {
+  configureWebpack: {
+    optimization: {
+      splitChunks: {
+        chunks: 'all'
+      }
+    }
+  },
   css: {
     loaderOptions: {
       sass: {
@@ -7,5 +14,25 @@ module.exports = {
         `
       }
     }
-  }
-};
+  },
+  rules: [
+    {
+      loader: 'ts-loader',
+      options: {
+        transpileOnly: true,
+        appendTsSuffixTo: [/\.vue$/]
+      }
+    },
+    {
+      test: /\.vue$/,
+      loader: 'vue-loader'
+    },
+    {
+      test: /\.css$/,
+      use: [
+        'vue-style-loader',
+        'css-loader'
+      ]
+    }
+  ]
+}
